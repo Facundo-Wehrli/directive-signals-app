@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductsModule } from './products/products.module';
+import { SignalsModule } from './signals/signals.module';
 
 const routes: Routes = [
   {
@@ -9,9 +10,14 @@ const routes: Routes = [
       import('./products/products.module').then((m) => m.ProductsModule),
   },
   {
-    path:'**',
-    redirectTo:'products'
-  }
+    path: 'signals',
+    loadChildren: () =>
+      import('./signals/signals.module').then((m) => m.SignalsModule),
+  },
+  {
+    path: '**',
+    redirectTo: 'products',
+  },
 ];
 
 @NgModule({
