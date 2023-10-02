@@ -11,6 +11,8 @@ interface MenuItem {
   styleUrls: ['./side-menu.component.css'],
 })
 export class SideMenuComponent {
+/* The code `public menuItems = signal(<MenuItem[]>[ ... ]);` is using the `signal` function to create
+an observable array of `MenuItem` objects. */
   public menuItems = signal(<MenuItem[]>[
     { title: 'Contador', route: 'counter' },
     { title: 'Usuario', route: 'user-info' },
