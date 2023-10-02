@@ -6,6 +6,7 @@ import { SignalsLayoutComponent } from './layouts/signals-layout/signals-layout.
 import { CounterPageComponent } from './pages/counter-page/counter-page.component';
 import { UserIngoPageComponent } from './pages/user-ingo-page/user-ingo-page.component';
 import { PropertiesPageComponent } from './pages/properties-page/properties-page.component';
+import { SideMenuComponent } from './components/side-menu/side-menu.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { PropertiesPageComponent } from './pages/properties-page/properties-page
     SignalsLayoutComponent,
     CounterPageComponent,
     UserIngoPageComponent,
-    PropertiesPageComponent
+    PropertiesPageComponent,
+    SideMenuComponent
   ],
   imports: [
     CommonModule,
