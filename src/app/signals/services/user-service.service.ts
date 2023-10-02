@@ -11,7 +11,7 @@ export class UserServiceService {
   //https://reqres.in (single user)
   private baseUrl = 'https://reqres.in/api/users';
 
-  gerUserById(id: number): Observable<User> {
+  getUserById(id: number): Observable<User> {
     return this.http.get<SingleUserResponse>(`${this.baseUrl}/${id}`).pipe(
       map((response) => response.data),
       tap(console.log)
